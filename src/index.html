@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header id="header" class="sm:w-4/5 mx-auto">
+    <header id="header" class="md:w-4/5 sm:w-11/12 mx-auto">
       <!-- navbar -->
       <nav>
         <div class="navbar bg-base-100">
@@ -77,11 +77,11 @@
 
       <!-- hero -->
       <div class="flex flex-col items-center text-center mt-20">
-        <h3 class="font-bold md:text-2xl text-md text-gray-500 px-4">Bringing Families Together <span >❤️‍🔥</span>
+        <h3 class="font-bold md:text-2xl text-md text-gray-500 px-4">Bringing Families Together <span >❤️‍🔥</span></h3>
         <h1 class="lg:text-7xl md:text-5xl text-4xl font-bold text-black my-7 leading-tight">A World of Pets at Your Fingertips</h1>
         <p class="text-black px-6">Discover your perfect furry friend. Browse our wide variety of pets, from playful kittens to loyal dogs. Find your new best companion today. Adopt, don’t shop. Love a pet, save a life.</p>
-        </h3>
-        <a class="btn btn-primary btn-wide my-7" href="#main">View More</a>
+        
+        <a class="btn btn-primary btn-wide text-white my-7" href="#main">View More</a>
         <img  src="../images/pet.webp" alt="A World of Pets at Your Fingertips">  
       </div>    
     </header>
@@ -96,7 +96,7 @@
 
 
     <!-- main start here -->
-     <main id="main" class="w-4/5 mx-auto mt-10">
+     <main id="main" class="xl:w-4/5 w-11/12 mx-auto mt-10">
 
       <!-- title -->
       <div class="text-center">
@@ -108,6 +108,12 @@
       <section id="section-category-btn" class="grid md:grid-cols-4 grid-cols-2 my-10 gap-5">
       
       </section>
+
+      <div class="flex justify-between items-center mb-5">
+        <h2 class="text-lg font-bold">Best Deal For You</h2>
+        <button id="sort-btn" class="btn btn-primary text-white">Sort by Price</button>
+        
+      </div>
 
        <!-- loading button -->
        <div class="flex justify-center items-center">
@@ -131,6 +137,22 @@
       </main>
     <!-- main start end -->
 
+    <!-- modal here -->
+    <dialog id="my-modal" class="modal">
+      
+    </dialog>
+
+    <!-- modal 2 -->
+    <dialog id="my-modal-2" class="modal">
+      <div class="modal-box text-center w-1/4">
+        <span class="loading loading-ring loading-lg"></span>
+        <h2 class="text-2xl font-bold mb-4 text-primary">Congrates!</h2>
+        <p class="font-bold mb-3 text-sm">Adoption process is start for your pet.</p>
+        <p id="count" class="text-3xl font-bold"></p>
+        
+      </div>
+    </dialog>
+
     <!-- footer start here -->
   <footer class="bg-black p-16 mt-10 mx-auto ">
     <div id="contact" class="footer text-white lg:ml-16">
@@ -149,7 +171,7 @@
         </address>
 
         <div class="flex justify-between gap-2 mt-3 min-w-60">
-          <img src="../images/fb.png" alt="facebook">
+          <a href="https://www.facebook.com/tarekrahman1141" target="_blank"><img src="../images/fb.png" alt="facebook"></a>
           <img src="../images/x.png" alt="x.com">
           <img src="../images/youtube.png" alt="youtube">
           <img src="..//images/instragram.png" alt="instragram">
@@ -158,7 +180,7 @@
       </nav>
       <nav >
         <h3 class="footer-title text-lg text-white mb-4">Useful links</h3>
-        <a class="link link-hover text-base">Home</a>
+        <a href="#header" class="link link-hover text-base">Home</a>
         <a class="link link-hover text-base">About us</a>
         <a class="link link-hover text-base">Animals</a>
         <a class="link link-hover text-base">Foundation</a>
