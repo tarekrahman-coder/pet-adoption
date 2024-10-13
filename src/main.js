@@ -34,7 +34,7 @@ async function displayingCategory() {
         data.categories.forEach(pet => {
             const {category, category_icon: icon} = pet;
            categoryBtns.innerHTML += `
-            <div class="flex gap-3 items-center justify-center border px-2 py-4 rounded-xl category-btn" data-category=${category}>
+            <div class="flex gap-3 items-center justify-center border md:px-2 px-1 md:py-4 py-2 rounded-xl category-btn" data-category=${category}>
             <img src="${icon}" alt="category_icon">
             <h3 class="font-bold text-lg">${category}</h3>
             </div>
@@ -88,9 +88,9 @@ async function displayPet(selectedCategory = null){
         petContainer.classList.remove('grid')
         petContainer.innerHTML = `
             <div class="flex flex-col justify-center items-center bg-gray-100 rounded-2xl h-80 py-52">
-                <img src="../images/error.webp" alt="error png" class="w-32" />
-                <h2 class="text-2xl font-bold my-3">No information available</h2>
-                <p class="text-gray-500">Oops! It looks like there are no pets available in the category right now. Please try again later.</p>
+                <img src="../images/error.webp" alt="error png" class="md:w-32 w-20" />
+                <h2 class="md:text-2xl text-lg font-bold my-3 ">No information available</h2>
+                <p class="text-gray-500 md:text-base text-sm px-4 mx-auto">Oops! It looks like there are no pets available in the category right now. Please try again later.</p>
             </div>
         `
     }
@@ -104,7 +104,7 @@ async function displayPet(selectedCategory = null){
                     <figure>
                         <img
                         src="${image}"
-                        alt="Shoes" class="rounded-2xl pet-img" />
+                        alt="Shoes" class="rounded-2xl pet-img w-full" />
                     </figure>
                     <div class="card-body px-0 pb-0 -mt-4">
                         <h2 class="card-title font-bold">${name ? name : 'Not available'}</h2>
@@ -129,8 +129,8 @@ async function displayPet(selectedCategory = null){
                         <p class="text-gray-500 font-bold text-sm">Price: ${price ? price + '$' : 'Not available'}</p>
                     </div>
 
-                        <div class="flex justify-between gap-3">
-                        <button class="border text-2xl font-bold py-2 px-4 rounded-md pet-items">
+                        <div class="flex justify-between gap-2 -ml-1">
+                        <button class="border text-xl font-bold py-1 px-2 rounded-md pet-items">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 width="28" height="28" 
@@ -143,8 +143,8 @@ async function displayPet(selectedCategory = null){
                                 </path>
                             </svg>
                         </button>
-                        <button class="border text-lx font-bold py-2 px-4 rounded-md text-primary">Adopt</button>
-                        <button class="border text-lx font-bold py-2 px-4 rounded-md text-primary">Details</button>
+                        <button class="border text-base font-bold py-1 px-2 rounded-md text-primary">Adopt</button>
+                        <button class="border text-base font-bold py-1 px-2 rounded-md text-primary">Details</button>
                         </div>
                         
                     </div>

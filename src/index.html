@@ -8,19 +8,19 @@
   </head>
   <body>
     <!-- header start -->
-    <header id="header" class="w-4/5 mx-auto">
+    <header id="header" class="sm:w-4/5 mx-auto">
       <!-- navbar -->
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <img src="../images/logo.webp" alt="peddy logo" class="w-5" />
-            <a class="text-3xl font-bold px-2">Peddy</a>
+            <img src="../images/logo.webp" alt="peddy logo" class="md:w-7 w-5"/>
+            <a class="md:text-4xl text-3xl font-bold px-2">Peddy</a>
           </div>
           <div class="navbar-center hidden md:flex items-end h-20">
             <ul class="menu menu-horizontal px-1">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#main">Shop</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a class="text-lg" href="#header">Home</a></li>
+              <li><a class="text-lg" href="#main">Shop</a></li>
+              <li><a class="text-lg" href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -66,9 +66,9 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>Contact</a></li>
+                <li><a class="link-hover" href="#header">Home</a></li>
+                <li><a class="link-hover" href="#main">Shop</a></li>
+                <li><a class="link-hover" href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -77,9 +77,9 @@
 
       <!-- hero -->
       <div class="flex flex-col items-center text-center mt-20">
-        <h3 class="font-bold text-xl text-gray-500">Bringing Families Together <span >❤️‍🔥</span>
-        <h1 class="text-7xl font-bold text-black my-7 leading-tight">A World of Pets at Your Fingertips</h1>
-        <p class="text-black ">Discover your perfect furry friend. Browse our wide variety of pets, from playful kittens to loyal dogs. Find your new best companion today. Adopt, don’t shop. Love a pet, save a life.</p>
+        <h3 class="font-bold md:text-2xl text-md text-gray-500 px-4">Bringing Families Together <span >❤️‍🔥</span>
+        <h1 class="lg:text-7xl md:text-5xl text-4xl font-bold text-black my-7 leading-tight">A World of Pets at Your Fingertips</h1>
+        <p class="text-black px-6">Discover your perfect furry friend. Browse our wide variety of pets, from playful kittens to loyal dogs. Find your new best companion today. Adopt, don’t shop. Love a pet, save a life.</p>
         </h3>
         <a class="btn btn-primary btn-wide my-7" href="#main">View More</a>
         <img  src="../images/pet.webp" alt="A World of Pets at Your Fingertips">  
@@ -100,12 +100,12 @@
 
       <!-- title -->
       <div class="text-center">
-        <h2 class="text-3xl font-bold text-black ">Adopt Your Best Friend</h2>
-        <p class="text-gray-500 text-sm mt-5 w-4/5 mx-auto">Find your perfect furry companion. Our adoptable pets are waiting for a loving home. Browse our selection today and discover your new best friend</p>
+        <h2 class="lg:text-5xl md:text-4xl text-3xl font-bold text-black ">Adopt Your Best Friend</h2>
+        <p class="text-gray-500 md:text-lg text-sm mt-5 md:w-4/5 mx-auto">Find your perfect furry companion. Our adoptable pets are waiting for a loving home. Browse our selection today and discover your new best friend</p>
       </div>
 
       <!-- category title with button-->
-      <section id="section-category-btn" class="grid grid-cols-4 my-10 gap-5">
+      <section id="section-category-btn" class="grid md:grid-cols-4 grid-cols-2 my-10 gap-5">
       
       </section>
 
@@ -116,7 +116,7 @@
 
       <section class="flex gap-2">
         <!-- pet container -->
-        <div id="pet-container" class="grid grid-cols-3 w-4/5 gap-2">
+        <div id="pet-container" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-4/5 gap-2">
 
         </div>
 
