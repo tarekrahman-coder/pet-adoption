@@ -1,0 +1,24 @@
+{
+  "name": "assignment-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "npx tailwindcss -i ./dist/input.css -o ./src/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Programming-Hero-Web-Course4/b10-test-tarekrahman-coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Programming-Hero-Web-Course4/b10-test-tarekrahman-coder/issues"
+  },
+  "homepage": "https://github.com/Programming-Hero-Web-Course4/b10-test-tarekrahman-coder#readme",
+  "devDependencies": {
+    "daisyui": "^4.12.12",
+    "tailwindcss": "^3.4.13"
+  }
+}

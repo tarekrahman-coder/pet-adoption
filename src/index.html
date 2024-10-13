@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="header" class="w-4/5 mx-auto">
+      <!-- navbar -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img src="../images/logo.webp" alt="peddy logo" class="w-5" />
+            <a class="text-3xl font-bold px-2">Peddy</a>
+          </div>
+          <div class="navbar-center hidden md:flex items-end h-20">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#main">Shop</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"
+                />
+                <circle cx="12" cy="10" r="3" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </a>
+
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <div class="flex flex-col items-center text-center mt-20">
+        <h3 class="font-bold text-xl text-gray-500">Bringing Families Together <span >❤️‍🔥</span>
+        <h1 class="text-7xl font-bold text-black my-7 leading-tight">A World of Pets at Your Fingertips</h1>
+        <p class="text-black ">Discover your perfect furry friend. Browse our wide variety of pets, from playful kittens to loyal dogs. Find your new best companion today. Adopt, don’t shop. Love a pet, save a life.</p>
+        </h3>
+        <a class="btn btn-primary btn-wide my-7" href="#main">View More</a>
+        <img  src="../images/pet.webp" alt="A World of Pets at Your Fingertips">  
+      </div>    
+    </header>
+    <!-- header end -->
+      
+
+    <div class="flex justify-center">
+      <hr class="w-5 border-t-2 border-y-rose-500">
+    </div>
+    
+    
+
+
+    <!-- main start here -->
+     <main id="main" class="w-4/5 mx-auto mt-10">
+
+      <!-- title -->
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-black ">Adopt Your Best Friend</h2>
+        <p class="text-gray-500 text-sm mt-5 w-4/5 mx-auto">Find your perfect furry companion. Our adoptable pets are waiting for a loving home. Browse our selection today and discover your new best friend</p>
+      </div>
+
+      <!-- category title with button-->
+      <section id="section-category-btn" class="grid grid-cols-4 my-10 gap-5">
+      
+      </section>
+
+       <!-- loading button -->
+       <div class="flex justify-center items-center">
+        <span id="loading" class="loading loading-bars loading-lg hidden"></span>
+      </div>
+
+      <section class="flex gap-2">
+        <!-- pet container -->
+        <div id="pet-container" class="grid grid-cols-3 w-4/5 gap-2">
+
+        </div>
+
+        <!-- liked ped -->
+        <div id="pet-selected" class="grid grid-cols-2 gap-2 w-1/5 border rounded-2xl h-fit p-2">
+
+        </div>
+      </section>
+
+
+
+      </main>
+    <!-- main start end -->
+
+    <!-- footer start here -->
+  <footer class="bg-black p-16 mt-10 mx-auto ">
+    <div id="contact" class="footer text-white lg:ml-16">
+      <nav>
+        <div class="flex items-center">
+          <img src="../images/logo.webp" alt="peddy logo" class="w-5 h-5" />
+          <a class="text-3xl font-bold px-2">Peddy</a>
+        </div>
+
+        <address class="text-base mt-3 flex flex-col gap-2">
+          <span>Location: av. Washington 165,</span>
+          <span>NY CA 54003</span>
+          <span>Phone: +31 85 964 47 25</span>
+          <span>Email: <a href="mailto:info.tarekrahman@gmail.com">info.tarekrahman@gmail.com</a></span>
+          <span>Openings hours: 9.00 AM - 5.00 PM</span>
+        </address>
+
+        <div class="flex justify-between gap-2 mt-3 min-w-60">
+          <img src="../images/fb.png" alt="facebook">
+          <img src="../images/x.png" alt="x.com">
+          <img src="../images/youtube.png" alt="youtube">
+          <img src="..//images/instragram.png" alt="instragram">
+        </div>
+
+      </nav>
+      <nav >
+        <h3 class="footer-title text-lg text-white mb-4">Useful links</h3>
+        <a class="link link-hover text-base">Home</a>
+        <a class="link link-hover text-base">About us</a>
+        <a class="link link-hover text-base">Animals</a>
+        <a class="link link-hover text-base">Foundation</a>
+        <a class="link link-hover text-base">Contact</a>
+      </nav>
+      <nav>
+        <h3 class="footer-title text-lg text-white mb-4">Drop a Message</h3>
+
+        <div class="w-[80%]">
+          <label class="input input-bordered flex items-center gap-2 bg-gray-950 border-none outline-none">
+            <input type="text" class="grow" placeholder="Enter your email" />
+          </label>
+        </div>
+
+        <button class="btn w-[80%] bg-primary text-white border-none mt-2"><a href="#">Subscribe</a></button>
+      </nav>
+
+    </div>
+  </footer>
+    <!-- footer start end -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
